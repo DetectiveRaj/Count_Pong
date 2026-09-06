@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(102, 126, 234, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #667eea;
+}
+
+.player-info {
+    flex: 1;
+    text-align: center;
+}
+
+.player-info p:first-child {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.score {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.collision-counter {
+    flex: 1;
+    background: rgba(255, 165, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border-left: 2px solid #ffa500;
+    border-right: 2px solid #ffa500;
+    margin: 0 15px;
+}
+
+.collision-counter p:first-child {
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.counter {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffa500;
+    text-shadow: 0 0 10px #ffa500;
+}
+
+#gameCanvas {
+    display: block;
+    background: #000;
+    border: 3px solid #667eea;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+.instructions {
+    background: rgba(102, 126, 234, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    text-align: left;
+}
+
+.instructions p {
+    font-size: 0.9em;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.instructions strong {
+    color: #ffa500;
+}

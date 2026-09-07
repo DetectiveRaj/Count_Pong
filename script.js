@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d');
 // Game variables
 const PADDLE_WIDTH = 10;
 const PADDLE_HEIGHT = 80;
-const BALL_SIZE = 8;
+const BALL_SIZE = 15;
 const BALL_SPEED = 5;
 const PADDLE_SPEED = 6;
 const COMPUTER_SPEED = 5;
@@ -177,7 +177,7 @@ function drawPaddle(paddle) {
 function drawPlayerName() {
     ctx.save();
     ctx.fillStyle = '#00ff00';
-    ctx.font = 'bold 12px Arial';
+    ctx.font = 'bold 15px Arial';
     ctx.textAlign = 'center';
     ctx.translate(player.x + player.width / 2, player.y - 15);
     ctx.fillText('Vishal Raj', 0, 0);

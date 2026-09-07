@@ -177,7 +177,7 @@ function drawPaddle(paddle) {
 function drawPlayerName() {
     ctx.save();
     ctx.fillStyle = '#00ff00';
-    ctx.font = 'bold 18px Arial';
+    ctx.font = 'bold 25px Arial';
     ctx.textAlign = 'center';
     ctx.translate(player.x + player.width / 2, player.y - 15);
     ctx.fillText('Vishal Raj', 0, 0);
@@ -195,7 +195,7 @@ function drawBall() {
 
     // Draw collision count on ball
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 16px Arial';
+    ctx.font = 'bold 18px Arial';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(collisionCount, ball.x, ball.y);

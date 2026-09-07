@@ -195,7 +195,7 @@ function drawBall() {
 
     // Draw collision count on ball
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 25px Arial';
+    ctx.font = 'bold 22px Arial';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(collisionCount, ball.x, ball.y);
